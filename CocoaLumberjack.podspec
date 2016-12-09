@@ -23,6 +23,10 @@ Pod::Spec.new do |s|
   s.watchos.deployment_target = '2.0'
   s.tvos.deployment_target = '9.0'
 
+  s.public_header_files = 'Classes/*.h'
+
+  s.module_map = 'Framework/Lumberjack/CocoaLumberjack.modulemap'
+
   s.default_subspecs = 'Default', 'Extensions'
 
   s.subspec 'Default' do |ss|
